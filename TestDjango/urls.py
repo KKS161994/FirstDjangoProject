@@ -19,4 +19,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^test/',include('TestDb.urls')),
     url(r'^admin/', admin.site.urls),
+    url(r'^api/',include('TestAPI.urls'))
 ]
