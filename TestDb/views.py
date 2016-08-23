@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
 # Create your views here.
 from django.http import HttpResponse
@@ -20,6 +20,7 @@ def detail(request, question_id):
         question= Questions.objects.get(pk=question_id)
     except Questions.DoesNotExist:
         raise Http404("Question does not exist")
+        question = get_object_or_404(Question, pk=question_id)
     return render(request, 'test/detail.html', {'question': question})
 
 def results(request, question_id):
