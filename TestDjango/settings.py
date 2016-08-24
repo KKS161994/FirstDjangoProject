@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'TestAPI.apps.TestapiConfig',
+    'TestDjangoDoc.apps.TestdjangodocConfig',
     'rest_framework',
 ]
 REST_FRAMEWORK = {

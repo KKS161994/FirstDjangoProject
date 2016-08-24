@@ -17,7 +17,7 @@ from django.conf.urls import include,url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^test/',include('TestDb.urls')),
+    url(r'^test/',include('TestDb.urls',namespace="test")),
     url(r'^admin/', admin.site.urls),
     url(r'^api/',include('TestAPI.urls'))
 ]
