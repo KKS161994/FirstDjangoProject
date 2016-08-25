@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'TestAPI.apps.TestapiConfig',
     'TestDjangoDoc.apps.TestdjangodocConfig',
+    'TestAPIAuths.apps.TestapiauthsConfig',
     'rest_framework',
 ]
 REST_FRAMEWORK = {
@@ -80,7 +81,7 @@ WSGI_APPLICATION = 'TestDjango.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'testdb',
+        'NAME': 'testdjangoapp',
         'USER': 'tester',
         'PASSWORD': 'password',
         'HOST': '127.0.0.1',
